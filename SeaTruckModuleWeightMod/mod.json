@@ -1,0 +1,12 @@
+﻿{
+    "Id": "SeaTruckModuleWeightMod_BZ",
+    "DisplayName": "Sea Truck Module Weight Mod",
+    "Author": "Nicole Krista",
+    "Version": "1.0.0",
+    "Enable": true,
+    "AssemblyName": "SeaTruckModuleWeightMod_BZ.dll",
+    "VersionDependencies": {
+        "SMLHelper": "2.13.4"
+    },
+    "Game": "BelowZero"
+}

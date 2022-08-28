@@ -20,15 +20,12 @@ namespace ExosuitPickupDistanceMod_BZ
             public static bool Prefix(Exosuit __instance)
             {
                 __instance.gameObject.EnsureComponent<ExosuitTargeting>().SetIsUpdatingActiveTarget(true);
-
-                Logger.Log(Logger.Level.Debug, "isUpdatingActiveTarget: true");
                 return true; // allow original method to run
             }
 
             [HarmonyPostfix]
             public static void Postfix(Exosuit __instance)
             {
-                Logger.Log(Logger.Level.Debug, "isUpdatingActiveTarget: false");
                 __instance.gameObject.EnsureComponent<ExosuitTargeting>().SetIsUpdatingActiveTarget(false);
             }
         }
@@ -59,6 +56,7 @@ namespace ExosuitPickupDistanceMod_BZ
 
         }
 
+        [HarmonyFinalizer]
         static void Finalizer(Exception __exception)
         {
             Logger.Log(Logger.Level.Error, __exception.Message);
