@@ -15,7 +15,7 @@ namespace KnifeDamageMod_BZ
     class KnifeDamageMod
     {
         [HarmonyPatch(typeof(Knife))]
-        [HarmonyPatch("Start")]
+        [HarmonyPatch(nameof(Knife.Start))]
 
         internal class PatchKnifeStart
         {

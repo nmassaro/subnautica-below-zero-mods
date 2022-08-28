@@ -1,0 +1,12 @@
+﻿{
+    "Id": "ExosuitPickupDistanceMod_BZ",
+    "DisplayName": "Exosuit Pickup Distance Mod",
+    "Author": "Nicole Krista",
+    "Version": "1.0.0",
+    "Enable": true,
+    "AssemblyName": "ExosuitPickupDistanceMod_BZ.dll",
+    "VersionDependencies": {
+        "SMLHelper": "2.13.4"
+    },
+    "Game": "BelowZero"
+}
